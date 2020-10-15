@@ -14,6 +14,9 @@
     <!-- viewport info -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
     <!-- styling -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -23,22 +26,30 @@
 </head>
 
 <body>
-        <header>
-            <div class="navbar navbar-brand">
-                <a href="index.html">Home</a>
-                <a href="about-me.html">About Me</a>
-                <a href="#bike-setup">Bike Setup</a>
-                <h1>Pacific Northwest Trails</h1>
-            </div>
-        </header>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-me.html">About Me</a></li>
+            <li><a href="#bike-setup">Bike Setup</a></li>
+        </nav>
+    </div>
 
-        <main>
+    <header id="header">
+        <h1>Pacific Northwest Trails</h1>
+    </header>
+
+    <main>
+
+        <div class="container">
             <section id="about">
                 <h2>About Me</h2>
+                <hr>
 
                 <img src="images/Quinton.jpg" alt="Author's picture">
+                <p class="font-weight-bold">My name is Quinton Price.</p>
                 <p>
-                    My name is Quinton Price. I'm 20 years old and from the Seattle area. I'm currently majoring in
+                    I'm 20 years old and from the Seattle area. I'm currently majoring
+                    in
                     Computer Science at Walla Walla University, where I will graduate in June of 2023. I enjoy biking,
                     skiing, cars, technology and nature.
                 </p>
@@ -62,33 +73,92 @@
                     more and plan to improve on in the future.</p>
 
             </section>
+        </div>
 
+        <div class="container" id="setup">
             <section id="bike-setup">
                 <h2>Bike Setup</h2>
-                <p>In September of 2019, I bought a 2018 Trek Fuel Ex 8. While I enjyoed the bike, it did not have enough travel for the type of riding I enjoyed.</p>
-                <p>Recently, in July 2020, I purchased a 2021 Trek Remedy 8. Below are notable specs and components, with product linkss:</p>
-                <ul>
-                    <li>Bike: <a href="https://www.trekbikes.com/us/en_US/us/en_US/bikes/mountain-bikes/trail-mountain-bikes/remedy/remedy-8/p/32883/">2021 Trek Rememdy 8</a>, Size 17.5</li>
-                    <li>Travel: 160mm (front) and 150 (rear)</li>
-                    <li>Rear Shock: <a href="https://www.sram.com/en/rockshox/models/rs-sdlx-selp-b2">Rockshox Super Deluxe Select+</a></li>
-                    <li>Fork: <a href="https://www.sram.com/en/rockshox/models/fs-lyrk-selp-c3">Rockshox Lyrik Select+</a></li>
-                    <li>Front Tire: <a href="https://www.maxxis.com/catalog/tire-470-140-minion-dhr-ii">Maxxis Minon DHRII</a> MaxTerra / Evo Compound, 27.5x2.6</li>
-                    <li>Rear Tire: <a href="https://www.maxxis.com/catalog/tire-470-140-minion-dhr-ii">Maxxis Minon DHRII</a> Maxterra / Evo Compound, 27.5x2.6</li>
-                    <li>Pedals: <a href="https://www.raceface.com/products/chester-pedal"></a>Raceface Chester</li>
-                    <li>Grips: <a href="http://odigrips.com/store/elitelock-ongrips-2622">ODI Elite Pro</a></li>
-                    <li>Weight: 31.01 lbs</li>
-                    <li>Tire Pressure: 22 PSI (front) and 24 PSI (rear)</li>
-                    <li>Fork Pressure: 60 PSI</li>
-                    <li>Shock Pressure: 140 PSI</li>
-                </ul>
+                <hr>
+                <p>In September of 2019, I bought a 2018 Trek Fuel Ex 8. While I enjyoed the bike, it did not have
+                    enough
+                    travel for the type of riding I enjoyed.</p>
+                <p>Recently, in July 2020, I purchased a 2021 Trek Remedy 8. Below are notable specs and components,
+                    with
+                    product links:</p>
+
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Bike:</th>
+                            <td><a
+                                    href="https://www.trekbikes.com/us/en_US/us/en_US/bikes/mountain-bikes/trail-mountain-bikes/remedy/remedy-8/p/32883/">2021
+                                    Trek Rememdy 8</a>, Size 17.5</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Travel:</th>
+                            <td>160mm (front) and 150 (rear)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Rear Shock:</th>
+                            <td><a href="https://www.sram.com/en/rockshox/models/rs-sdlx-selp-b2">Rockshox Super Deluxe</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Fork:</th>
+                            <td><a href="https://www.sram.com/en/rockshox/models/fs-lyrk-selp-c3">Rockshox Lyrik
+                                    Select+</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Front Tire:</th>
+                            <td><a href="https://www.maxxis.com/catalog/tire-470-140-minion-dhr-ii">Maxxis Minon
+                                    DHRII</a> MaxTerra / Evo Compound, 27.5x2.6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Rear Tire:</th>
+                            <td><a href="https://www.maxxis.com/catalog/tire-470-140-minion-dhr-ii">Maxxis Minon
+                                    DHRII</a> Maxterra / Evo Compound, 27.5x2.6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Pedals:</th>
+                            <td><a href="https://www.raceface.com/products/chester-pedal"></a>Raceface Chester</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Grips:</th>
+                            <td><a href="http://odigrips.com/store/elitelock-ongrips-2622">ODI Elite Pro</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Weight:</th>
+                            <td>31.01 lbs</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tire Pressure:</th>
+                            <td>22 PSI (front) and 24 PSI (rear)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Fork Pressure:</th>
+                            <td>60 PSI</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Shock Pressure:</th>
+                            <td>140 PSI</td>
+                        </tr>
+                        </tr>
+                    </tbody>
+                </table>
+
                 <img src="images/Bike1.jpg" alt="Bike leaning against tree">
             </section>
-        </main>
+        </div>
+    </main>
 
-        <footer>
-            <a href="mailto:quintonp10@gmail.com">Contact</a>.
-            Quinton Price &copy;. All rights reserved.
-        </footer>
-    </body>
+    <footer>
+        <a href="mailto:quintonp10@gmail.com">Contact</a>.
+        Quinton Price &copy;. All rights reserved.
+    </footer>
+</body>
 
 </html>
