@@ -98,3 +98,7 @@ nav a:hover {
     font-size: .75em;
     text-align: center;
 }
+
+#rides {
+    margin-top: 50px;
+}
