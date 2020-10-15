@@ -12,7 +12,7 @@ a:hover {
 
 /* body */
 body {
-    background-image: url("../images/topography.png");
+    background-image: url("../images/backgrounds/topography.png");
 }
 
 /* header */
@@ -60,6 +60,7 @@ nav {
     background-color: #2a3b13;
     position: fixed;
     overflow: hidden;
+
 }
 
 /* nav links */ 
@@ -115,32 +116,6 @@ nav li {
 [class*="col-"] {
     width: 100%;
   }
-
-/* about me - img */
-#about img {
-    display: block;
-    width: 75%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-}
-
-/* bike setup section*/
-#setup {
-    margin-top: 50px;
-}
-
-/* bike setup image */
-#bike-setup img {
-    display: block;
-    width: 75%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-}
-
 
 @media (min-width: 768px) {
     .container {
