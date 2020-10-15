@@ -1,20 +1,100 @@
+* {
+    font-family: 'Helvetica Nue', 'Helvetica', 'Arial', sans-serif;
+}
+
+* a {
+    color: #a9714b;
+}
+
+/* body */
+body {
+    background-image: url("../images/topography.png");
+}
+
+/* header */
+#header {
+    text-align: center;
+    padding: 2rem;
+    color: #262a10;
+    text-emphasis: 900;
+}
+
+#header h1 {
+    font-weight: 900;
+}
+
 /* sets images to have some padding */ 
 img {
     padding: 5px;
 }
 
+/* temporary padding fix for paragraphs */
+/* UPDATE THIS!!!! */
 p {
-    padding-left: 3px;
+    padding: 3px;
+    text-align: justify;
 }
 
 #images img {
     display: block;
-    width: 40%;
+    width: 75%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
+/* top rides section imgs */
 #top-rides img {
     width: 30%;
     height:auto;
 }
 
+/* nav bar */
+nav {
+    background-color: #2a3b13;
+    position: fixed;
+    overflow: hidden;
+}
+
+/* nav links */ 
+nav a {
+    color: white;
+    padding: 12px 24px;
+    font-size: 2em;
+    float: left;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+
+/* navbar link hover */
+nav a:hover {
+    background-color: #ad8350;
+    color: #262a10;
+    text-decoration: none;
+}
+
+/* container*/
+.container {
+    background-color: #f8f9fa;
+    width: 90%;
+    padding: 30px;
+    font-size: 1.3em;
+    box-shadow: 5px 5px 5px 5px;
+}
+
+.container h2 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.img-citation {
+    font-size: .75em;
+    text-align: center;
+}
