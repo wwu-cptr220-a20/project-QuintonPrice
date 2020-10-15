@@ -102,3 +102,7 @@ nav a:hover {
 #rides {
     margin-top: 50px;
 }
+
+[class*="col-"] {
+    width: 100%;
+  }
