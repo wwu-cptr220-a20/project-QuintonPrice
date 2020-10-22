@@ -18,6 +18,8 @@
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 
     <!-- styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
@@ -31,10 +33,13 @@
         <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top">
             <li><a href="../index.html">Home</a></li>
             <li><a href="about-me.html">About Me</a></li>
+            <li> <a href="../trails/trails.html">Trails</a></li>
             <li><a href="https://www.evergreenmtb.org/support-us/donate" target="_blank">Donate</a></li>
             <li><a href="#bike-setup">Bike Setup</a></li>
         </nav>
     </div>
+
+    <button class="button btn-dark" id="dark_mode">Dark Mode</button>
 
     <header id="header">
         <h1>Pacific Northwest Trails</h1>
@@ -81,7 +86,7 @@
             <section id="bike-setup">
                 <h2>Bike Setup</h2>
                 <hr>
-                <p>In September of 2019, I bought a 2018 Trek Fuel Ex 8. While I enjyoed the bike, it did not have
+                <p>In September of 2019, I bought a 2018 Trek Fuel Ex 8. While I enjoyed the bike, it did not have
                     enough
                     travel for the type of riding I enjoyed.</p>
                 <p>Recently, in July 2020, I purchased a 2021 Trek Remedy 8. Below are notable specs and components,
@@ -102,7 +107,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Travel:</th>
-                            <td>160mm (front) and 150 (rear)</td>
+                            <td>160mm (front) and 150mm (rear)</td>
                         </tr>
                         <tr>
                             <th scope="row">Rear Shock:</th>
@@ -130,7 +135,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Pedals:</th>
-                            <td><a href="https://www.raceface.com/products/chester-pedal" target="_blank"></a>Raceface
+                            <td><a href="https://www.raceface.com/products/chester-pedal" target="_blank"></a>RaceFace
                                 Chester</td>
                         </tr>
                         <tr>
@@ -161,12 +166,53 @@
                 <img src="../images/Bike1.jpg" alt="Bike leaning against tree">
             </section>
         </div>
+
+        <div class="container">
+            <h2>Contact Me</h2>
+
+            <form id="signUpForm" class="form" novalidate>
+
+                <div class="form-group row">
+                    <label for="emailInput" class="col-lg-1">Email</label>
+                    <div class="col-lg-11">
+                        <input type="email" id="emailInput" class="form-control" required>
+                        <div class="invalid-feedback">Please provide a valid email</div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-lg-11">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-lg-11">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+
+                <label for="subject">Subject</label>
+                
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <button type="submit" class="btn btn-primary">Send</button>
+
+            </form>
+        </div>
     </main>
 
     <footer>
         <a href="mailto:quintonp10@gmail.com">Contact</a>.
         Quinton Price &copy;. All rights reserved.
     </footer>
+
+    <!-- scripts -->
+    <script src="../js/main.js"></script>
+    <script src="../js/about-me.js"></script>
+
 </body>
 
 </html>
