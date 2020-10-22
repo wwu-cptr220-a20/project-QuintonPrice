@@ -6,6 +6,7 @@ let button = document.getElementById("dark_mode");
 // function to change classes & create dark mode
 function darkModeCallBack() {
     document.querySelector("h1").classList.toggle("text-light");
+    document.querySelector("footer").classList.toggle("text-light");
 
     // changes container class colors
     let container = document.querySelectorAll(".container");
