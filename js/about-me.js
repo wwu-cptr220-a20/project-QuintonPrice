@@ -5,7 +5,7 @@ let form = document.querySelector('form');
 function clickCallBack(event) {
   event.preventDefault();
   let bool = form.checkValidity();
-  if (bool== true) {
+  if (bool==true) {
     document.querySelector('form').classList.add('d-none');
     document.querySelector('p').classList.remove('d-none');
   }

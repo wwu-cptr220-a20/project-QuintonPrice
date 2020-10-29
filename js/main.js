@@ -1,10 +1,11 @@
 'use strict';
 
-// variable 'button' to represent <button> element
-let button = document.getElementById("dark_mode");
+// variable 'darkButton' to represent <darkButton> element
+let darkButton = document.getElementById("dark_mode");
 
 // function to change classes & create dark mode
 function darkModeCallBack() {
+    // toggles header text color
     document.querySelector("h1").classList.toggle("text-light");
     document.querySelector("footer").classList.toggle("text-light");
 
@@ -13,20 +14,19 @@ function darkModeCallBack() {
     container.forEach(each =>{
         each.classList.toggle("bg-dark");
         each.classList.toggle("text-light");
-    })
+    });
 
     // changes table class colors
     let table = document.querySelectorAll("table");
     table.forEach(each =>{
         each.classList.toggle("bg-dark");
         each.classList.toggle("text-light");
-    })
+    });
 
     // changes body background image
     document.querySelector("body").classList.toggle("body-dark");
 
-
 }
 
-// event listener to the 'button' element that looks for 'click' type events
-button.addEventListener("click", darkModeCallBack);
+// event listener to the 'darkButton' element that looks for 'click' type events
+darkButton.addEventListener("click", darkModeCallBack);
